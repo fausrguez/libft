@@ -6,11 +6,11 @@
 /*   By: farodrig <farodrig@student.codam.n>          +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/26 17:04:48 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/26 18:15:57 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/10/27 21:58:39 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 	{
