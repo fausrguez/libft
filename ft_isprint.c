@@ -6,13 +6,13 @@
 /*   By: farodrig <farodrig@student.codam.n>          +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/27 21:42:27 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/27 21:58:39 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/10/27 22:12:08 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	if ((c >= 32))
+	if ((c >= 32 && c <= 126))
 	{
 		return (16384);
 	}
