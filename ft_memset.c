@@ -6,24 +6,23 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:13:40 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:13:43 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 16:44:51 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void *  ft_memset(void *str, int c, unsigned long int len)
+void	*ft_memset(void *str, int c, t_lui len)
 {
-    while (len--)
-    {
-        (*(char *))str[len - 1] = (unsigned char)c;        
-    }
-    return (str);
-}
+	unsigned char	*ptr;
+	unsigned int	i;
 
-int main(void)
-{
-    char *str = "hello";
-    ft_memset(str, 'n', 2);
-    printf("%s", str);
+	ptr = str;
+	i = 0;
+	while (len--)
+	{
+		ptr[i++] = c;
+	}
+
+	return (str);
 }
