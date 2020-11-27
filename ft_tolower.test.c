@@ -6,14 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.n>          +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/27 22:31:32 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/27 22:31:34 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 10:06:49 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-
-int ft_tolower(int c);
+#include "libft.h"
+#include "test_suite/test_suite.h"
 
 int is_the_same_result(int c)
 {
@@ -25,35 +23,25 @@ int is_the_same_result(int c)
 
 	if (lib_res != ft_res)
 	{
-		printf("\033[0;31m");
-		printf("[ERROR]> The result of ft_tolower() and tolower() is not the same\n");
-		printf("\033[0m");
-		printf("lib_res -> %d\n", lib_res);
-		printf("ft_res -> %d\n", ft_res);
+		print_error("The result of ft_toupper() and toupper() is not the same");
+		print_result_int(lib_res, ft_res);
 		return (0);
 	}
 
-	printf("\033[0;32m");
-	printf("[SUCCESS]> The result of ft_tolower() and tolower() is the same\n");
-	printf("\033[0m");
-	printf("lib_res -> %d\n", lib_res);
-	printf("ft_res -> %d\n", ft_res);
+	print_success();
+	print_result_int(lib_res, ft_res);
 	return (1);
 }
 
 int valid_on_alpha(int c)
 {
-	printf("\033[0;33m");
-	printf("\n[TEST]> On Alpha %c\n", c);
-	printf("\033[0m");
+	print_test_char("On Alpha", c);
 	return (is_the_same_result(c));
 }
 
 int valid_on_other_char(int c)
 {
-	printf("\033[0;33m");
-	printf("\n[TEST]> On Other Char: %c\n", c);
-	printf("\033[0m");
+	print_test_char("On Other Char", c);
 	return (is_the_same_result(c));
 }
 
@@ -61,9 +49,7 @@ int main(void)
 {
 	int c;
 
-	printf("\033[0;36m");
-	printf("--- ft_tolower vs tolower ---\n");
-	printf("\033[0m");
+	print_function_info("tolower", "Converts an upper-case letter to the corresponding lower-case letter");
 	c = '8';
 	valid_on_other_char(c);
 	c = '\\';

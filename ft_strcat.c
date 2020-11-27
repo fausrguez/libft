@@ -6,13 +6,13 @@
 /*   By: farodrig <farodrig@student.codam.n>          +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/27 23:26:25 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/29 05:16:21 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/15 16:16:14 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-long unsigned int	ft_strlen(const char *str);
+#include "libft.h"
 
-char				*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, char *src)
 {
 	long unsigned int c;
 	long unsigned int src_size;

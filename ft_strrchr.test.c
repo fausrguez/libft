@@ -10,28 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-// #include <bsd/string.h>
-#define _GNU_SOURCE
-
-char	*ft_strrchr(char *str, int c);
-
-void 				print_function_info(const char *name, const char *description)
-{
-	printf("\033[0;36m--- ft_%s vs %s ---\033[0m\n", name, name);
-	printf("%s\n", description);
-}
-
-void 				print_error(const char *msg)
-{
-	printf("\033[0;31m[ERROR]> %s\033[0m\n", msg);
-}
-
-void 				print_success(const char *msg)
-{
-	printf("\033[0;32m[SUCCESS]> %s\033[0m\n", msg);
-}
+#include "libft.h"
+#include "test_suite/test_suite.h"
 
 void 				trigger_test(const char *test_description, char *str, int c)
 {

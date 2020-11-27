@@ -6,30 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.n>          +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 06:19:47 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/29 06:19:50 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/15 18:00:08 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-char *ft_strcat(char *dest, const char *src);
-
-void print_function_info(const char *name, const char *description)
-{
-	printf("\033[0;36m--- ft_%s vs %s ---\033[0m\n", name, name);
-	printf("%s\n", description);
-}
-
-void print_error(const char *msg)
-{
-	printf("\033[0;31m[ERROR]> %s\033[0m\n", msg);
-}
-
-void print_success(const char *msg)
-{
-	printf("\033[0;32m[SUCCESS]> %s\033[0m\n", msg);
-}
+#include "libft.h"
+#include "test_suite/test_suite.h"
 
 void trigger_test(const char *test_description, char *dest, char *src)
 {
@@ -40,27 +22,26 @@ void trigger_test(const char *test_description, char *dest, char *src)
 
 	strcpy(dest_cpy, dest);
 	strcpy(src_cpy, src);
-	printf("\n\033[0;33m[TEST]> %s: %s, %s \033[0m\n", test_description, dest, src);
+	print_test_cmp(test_description, dest, src);
 	lib_result = strcat(dest, src);
 	ft_result = ft_strcat(dest_cpy, src_cpy);
 	if (strcmp(lib_result,ft_result) == 0)
 	{
-		print_success("lib_result is the same as ft_result");
+		print_success();
 	}
 	else
 	{
 		print_error("lib_result is not the same as the ft_result");
 	}
-	printf("lib_result -> |%s|\n", lib_result);
-	printf("ft_result -> |%s|\n", ft_result);
+	print_result_str(lib_result, ft_result);
 }
 
 int main(void)
 {
-	char src[10];
-	char dest[10];
+	char src[15];
+	char dest[15];
 
-	print_function_info("strcat", "The  strcat()  function  appends  the src string to the dest string, overwriting the terminating null byte ('\\0') at the end of dest, and then adds a terminating null byte.");
+	print_function_info("strcat", "Appends the src string to the dest string, overwriting the terminating null byte ('\\0') at the end of dest, and then adds a terminating null byte.");
 	strcpy(src, "\0");
 	strcpy(dest, "\0");
 	trigger_test("Valid on both empty", dest, src);
