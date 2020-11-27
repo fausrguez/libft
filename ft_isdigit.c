@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_isdigit.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/26 17:04:48 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/14 14:43:06 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:09:18 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:09:20 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

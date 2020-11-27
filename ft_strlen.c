@@ -3,16 +3,18 @@
 /*                                                        ::::::::            */
 /*   ft_strlen.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/26 14:56:54 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/26 16:39:41 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:18:24 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:18:27 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-long unsigned int	ft_strlen(const char *str)
+#include "libft.h"
+
+t_lui	ft_strlen(const char *str)
 {
-	long unsigned int counter;
+	t_lui counter;
 
 	counter = 0;
 	while (*str != '\0')

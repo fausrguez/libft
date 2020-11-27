@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_strrchr.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <marvin@codam.nl>                   +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/11/06 11:27:05 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/06 11:27:08 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:19:24 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:19:26 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

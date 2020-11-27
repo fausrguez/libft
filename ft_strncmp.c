@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_strncmp.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/31 20:08:34 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/03 21:37:21 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:18:35 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:18:39 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

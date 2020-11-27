@@ -3,16 +3,16 @@
 /*                                                        ::::::::            */
 /*   ft_strlcpy.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/31 19:21:22 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 10:14:41 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:18:09 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:18:11 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+t_lui	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int c;
 

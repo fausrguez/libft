@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_isascii.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/27 22:42:24 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/27 22:42:26 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:08:37 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:08:39 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

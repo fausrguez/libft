@@ -3,13 +3,12 @@
 /*                                                        ::::::::            */
 /*   ft_strchr.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/11/03 21:54:18 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/03 22:30:31 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:16:53 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:16:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 char	*ft_strchr(char *str, int c)
 {

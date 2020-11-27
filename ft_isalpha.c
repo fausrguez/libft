@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_isalpha.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/26 18:42:02 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/14 14:30:39 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:07:38 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:07:42 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

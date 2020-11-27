@@ -3,16 +3,16 @@
 /*                                                        ::::::::            */
 /*   ft_strlcat.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/29 06:37:56 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/29 06:42:52 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:17:48 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:17:52 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-long unsigned int	ft_strlen(const char *str);
+#include "libft.h"
 
-long unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+t_lui	ft_strlcat(char *dest, char *src, unsigned int size)
 {
 	unsigned int c;
 	unsigned int src_size;

@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_tolower.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/27 22:31:22 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/27 22:32:14 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:19:49 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:19:51 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

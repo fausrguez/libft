@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_isprint.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/27 21:42:27 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/14 14:31:10 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:10:20 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:10:23 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

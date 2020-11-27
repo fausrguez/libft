@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_strcat.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/27 23:26:25 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/15 16:16:14 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:16:18 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:16:21 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strcat(char *dest, char *src)
 {
-	long unsigned int c;
-	long unsigned int src_size;
-	long unsigned int dest_size;
+	t_lui	c;
+	t_lui	src_size;
+	t_lui	dest_size;
 
 	c = 0;
 	src_size = ft_strlen(src);

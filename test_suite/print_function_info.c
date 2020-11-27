@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   print_function_info.c                              :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2020/11/27 11:52:14 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:52:16 by farodrig      ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "test_suite.h"
 
 void	print_function_info(const char *name, const char *description)

@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_isalnum.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: farodrig <farodrig@student.codam.n>          +#+                     */
+/*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/27 21:08:07 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/15 15:36:24 by farodrig      ########   odam.nl         */
+/*   Created: 2020/11/27 11:06:36 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/27 11:06:39 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
