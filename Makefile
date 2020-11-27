@@ -6,12 +6,12 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/11/27 14:50:02 by farodrig      ########   odam.nl          #
+#    Updated: 2020/11/27 16:41:14 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft
-FLAGS := -Wall -Wextra -Werror
+FLAGS := -Wall -Wextra -Werror -pedantic -std=c89
 function_files := $(shell find . -name "*.c" -not -name "*.test.c" -maxdepth 1 | tr '\n' ' ')
 test_files := $(shell find . -name "*.test.c" | tr '\n' ' ')
 test_suite_files := $(shell find test_suite -name "*.c" | tr '\n' ' ')
