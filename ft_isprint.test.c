@@ -6,14 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.n>          +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/27 21:44:24 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/27 21:58:39 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/15 17:07:18 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-
-int ft_isprint(int c);
+#include "libft.h"
+#include "test_suite/test_suite.h"
 
 int is_the_same_result(int c)
 {
@@ -25,35 +23,25 @@ int is_the_same_result(int c)
 
 	if (lib_res != ft_res)
 	{
-		printf("\033[0;31m");
-		printf("[ERROR]> The result of ft_isprint() and isprint() is not the same\n");
-		printf("\033[0m");
-		printf("lib_res -> %d\n", lib_res);
-		printf("ft_res -> %d\n", ft_res);
+		print_error("The result of ft_isprint() and isprint() is not the same");
+		print_result_int(lib_res, ft_res);
 		return (0);
 	}
 
-	printf("\033[0;32m");
-	printf("[SUCCESS]> The result of ft_isprint() and isprint() is the same\n");
-	printf("\033[0m");
-	printf("lib_res -> %d\n", lib_res);
-	printf("ft_res -> %d\n", ft_res);
+	print_success();
+	print_result_int(lib_res, ft_res);
 	return (1);
 }
 
 int valid_on_regular_char(int c)
 {
-	printf("\033[0;33m");
-	printf("\n[TEST]> On Regular Char %c\n", c);
-	printf("\033[0m");
+	print_test_char("On Regular Char", c);
 	return (is_the_same_result(c));
 }
 
 int valid_on_other_char(int c)
 {
-	printf("\033[0;33m");
-	printf("\n[TEST]> On Not printable Char: %c\n", c);
-	printf("\033[0m");
+	print_test_char("On Not printable Char", c);
 	return (is_the_same_result(c));
 }
 
@@ -61,9 +49,7 @@ int main(void)
 {
 	int c;
 
-	printf("\033[0;36m");
-	printf("--- ft_isprint vs isprint ---\n");
-	printf("\033[0m");
+	print_function_info("isprint", "Tests for any printing character, including space (` ')");
 	c = '\\';
 	valid_on_regular_char(c);
 	c = 'b';

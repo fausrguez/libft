@@ -6,14 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.n>          +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/27 22:42:31 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/10/27 22:42:33 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/15 16:54:59 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-
-int ft_isascii(char c);
+#include "libft.h"
+#include "test_suite/test_suite.h"
 
 int is_the_same_result(char c)
 {
@@ -25,45 +23,33 @@ int is_the_same_result(char c)
 
 	if (lib_res != ft_res)
 	{
-		printf("\033[0;31m");
-		printf("[ERROR]> The result of ft_isascii() and isascii() is not the same\n");
-		printf("\033[0m");
-		printf("lib_res -> %d\n", lib_res);
-		printf("ft_res -> %d\n", ft_res);
+		print_error("The result of ft_isascii() and isascii() is not the same");
+		print_result_int(lib_res, ft_res);
 		return (0);
 	}
 
-	printf("\033[0;32m");
-	printf("[SUCCESS]> The result of ft_isascii() and isascii() is the same\n");
-	printf("\033[0m");
-	printf("lib_res -> %d\n", lib_res);
-	printf("ft_res -> %d\n", ft_res);
+	print_success();
+	print_result_int(lib_res, ft_res);
 	return (1);
 }
 
 int valid_on_ascii(char c)
 {
-	printf("\033[0;33m");
-	printf("\n[TEST]> On Ascii\n");
-	printf("\033[0m");
+	print_test_char("On Ascii", c);
 	return (is_the_same_result(c));
 }
 
 int valid_on_other_char(char c)
 {
-	printf("\033[0;33m");
-	printf("\n[TEST]> On Other Char\n");
-	printf("\033[0m");
+	print_test_char("On Other Char", c);
 	return (is_the_same_result(c));
 }
 
 int main(void)
 {
-	char c;
+	int c;
 
-	printf("\033[0;36m");
-	printf("--- ft_isascii vs isascii ---\n");
-	printf("\033[0m");
+	print_function_info("isascii", "Test for an ASCII character, which is any character between 0 and octal 0177 inclusive");
 	c = '8';
 	valid_on_ascii(c);
 	c = 'b';

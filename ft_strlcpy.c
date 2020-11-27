@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strcat.c                                        :+:    :+:            */
+/*   ft_strlcpy.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: farodrig <farodrig@student.codam.n>          +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/27 23:26:25 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/15 16:16:14 by farodrig      ########   odam.nl         */
+/*   Created: 2020/10/31 19:21:22 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/11/15 16:11:07 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *dest, char *src)
+long unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	long unsigned int c;
-	long unsigned int src_size;
-	long unsigned int dest_size;
+	unsigned int c;
 
 	c = 0;
-	src_size = ft_strlen(src);
-	dest_size = ft_strlen(dest);
-	while (c <= src_size)
+	if (size > 0)
 	{
-		dest[dest_size + c] = src[c];
-		c++;
+		while (src[c] != '\0' && c <= size)
+		{
+			dest[c] = src[c];
+			c++;
+		}
+		while ((c <= size || src[c] != '\0'))
+		{
+			dest[c] = 0;
+			c++;
+		}
 	}
-	dest[dest_size + c] = '\0';
-	return (dest);
+	return (ft_strlen(src));
 }
