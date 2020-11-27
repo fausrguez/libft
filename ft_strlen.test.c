@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 12:32:04 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 12:43:58 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 12:47:16 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,6 @@ int	valid_on_regular_string(char *str)
 int	main(void)
 {
 	char str[10];
-	char str_loc[10];
 
 	print_function_info("strlen", "Calculates the length of the\
 	string pointed to by s, excluding the terminating null byte");
