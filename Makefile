@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/11/27 10:14:39 by farodrig      ########   odam.nl          #
+#    Updated: 2020/11/27 13:39:29 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,5 +73,8 @@ fclean: clean
 	find . \( -name "*.o" -o -name "*.a" \) -delete
 
 re: fclean all
+
+norm:
+	norminette -R CheckForbiddenSourceHeader *.c
 
 .PHONY: all fclean clean re test_suite
