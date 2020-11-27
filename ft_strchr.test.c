@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:17:00 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:49:17 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:02:58 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ int		main(void)
 	char c;
 
 	print_function_info("strchr", "Returns a pointer \
-	to the first occurrence of the character c in the \
-	string s. return  a  pointer  to the  matched  \
-	character  or  NULL  if  the character is not found.");
+to the first occurrence of the character c in the \
+string s. return  a  pointer  to the  matched  \
+character  or  NULL  if  the character is not found.");
 	strcpy(str, "hello");
 	c = '\0';
 	trigger_test("Valid on c = NULL", str, c);

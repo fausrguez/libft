@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:07:05 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:07:09 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:02:27 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int	main(void)
 	int c;
 
 	print_function_info("isalnum", "Tests for any character \
-	for which isalpha(3) or isdigit(3) is true.");
+for which isalpha(3) or isdigit(3) is true.");
 	c = '8';
 	valid_on_number(c);
 	c = '\\';

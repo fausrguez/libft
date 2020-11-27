@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:08:15 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:08:17 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:02:21 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	main(void)
 	int c;
 
 	print_function_info("isalpha", "Tests for any character \
-	for which isupper(3) or islower(3) is true");
+for which isupper(3) or islower(3) is true");
 	c = '8';
 	valid_on_other_char(c);
 	c = '\\';

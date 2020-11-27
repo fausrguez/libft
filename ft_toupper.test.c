@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:20:12 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 12:33:12 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:05:21 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	is_the_same_result(int c)
 	if (lib_res != ft_res)
 	{
 		print_error("The result of ft_toupper() \
-		and toupper() is not the same");
+and toupper() is not the same");
 		print_result_int(lib_res, ft_res);
 		return (0);
 	}
@@ -49,7 +49,7 @@ int	main(void)
 	int c;
 
 	print_function_info("toupper", "Converts a lower-case\
-	letter to the corresponding upper-case letter");
+letter to the corresponding upper-case letter");
 	c = '8';
 	valid_on_other_char(c);
 	c = '\\';

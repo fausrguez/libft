@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/11/27 13:39:29 by farodrig      ########   odam.nl          #
+#    Updated: 2020/11/27 14:50:02 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,9 +56,10 @@ exec_all:
 		$$file; \
 	done
 
+ft_isalnum.out: ft_isalnum.o ft_isalnum.test.o ft_isalpha.o ft_isdigit.o
 ft_strcat.out: ft_strcat.o ft_strcat.test.o ft_strlen.o
 ft_strlcat.out: ft_strlcat.o ft_strlcat.test.o ft_strlen.o
-ft_isalnum.out: ft_isalnum.o ft_isalnum.test.o ft_isalpha.o ft_isdigit.o
+ft_strlcpy.out: ft_strlcpy.o ft_strlcpy.test.o ft_strlen.o
 
 %.out: %.o %.test.o
 	$(CC) $^ $(test_suite_files) -o $@

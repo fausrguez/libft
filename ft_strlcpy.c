@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:18:09 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:18:11 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:20:16 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_lui	ft_strlcpy(char *dest, char *src, unsigned int size)
 	c = 0;
 	if (size > 0)
 	{
-		while (src[c] != '\0' && c <= size)
+		while (src[c] != '\0' && c + 1 < size)
 		{
 			dest[c] = src[c];
 			c++;

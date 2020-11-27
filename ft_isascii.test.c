@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:08:55 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:23:18 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:02:34 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,8 @@ int	main(void)
 	int c;
 
 	print_function_info("isascii", "Test for an ASCII \
-	character, which is any character between \
-	0 and octal 0177 inclusive");
+character, which is any character between \
+0 and octal 0177 inclusive");
 	c = '8';
 	valid_on_ascii(c);
 	c = 'b';

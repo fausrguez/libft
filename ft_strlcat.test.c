@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:17:57 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:51:25 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:03:03 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ int		main(void)
 	char dest[15];
 
 	print_function_info("strlcat", "Appends  the src \
-	string to the dest string, overwriting the \
-	terminating null byte ('\\0') at the end of \
-	dest, and then adds a terminating null byte.");
+string to the dest string, overwriting the \
+terminating null byte ('\\0') at the end of \
+dest, and then adds a terminating null byte.");
 	strcpy(src, "\0");
 	strcpy(dest, "\0");
 	trigger_test("Valid on both empty", dest, src);

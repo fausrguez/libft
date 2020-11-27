@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:19:32 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 12:22:32 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 14:54:52 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,11 @@ int		main(void)
 	int		c;
 
 	print_function_info("strrchr", "The strrchr() \
-	function locates the last occurrence of c \
-	(converted to a char) in the string pointed to by s. \
-	The terminating null character is considered to be part \
-	of the string; therefore if c is `\0', the func-tions  \
-	locate the terminating `\0'.");
+function locates the last occurrence of c \
+(converted to a char) in the string pointed to by s. \
+The terminating null character is considered to be part \
+of the string; therefore if c is `\0', the func-tions  \
+locate the terminating `\0'.");
 	c = '\0';
 	strcpy(str, "\0");
 	trigger_test("Valid on both empty", str, c);

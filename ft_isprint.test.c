@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:11:22 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:26:04 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:02:46 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	is_the_same_result(int c)
 	if (lib_res != ft_res)
 	{
 		print_error("The result of ft_isprint() \
-		and isprint() is not the same");
+and isprint() is not the same");
 		print_result_int(lib_res, ft_res);
 		return (0);
 	}
@@ -49,7 +49,7 @@ int	main(void)
 	int c;
 
 	print_function_info("isprint", "Tests for \
-	any printing character, including space (` ')");
+any printing character, including space (` ')");
 	c = '\\';
 	valid_on_regular_char(c);
 	c = 'b';

@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 12:32:04 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 12:47:16 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:03:10 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	is_the_same_result(char *str)
 	if (lib_res != ft_res)
 	{
 		print_error("The result of ft_strlen() and strlen() \
-		is not the same");
+is not the same");
 		printf("strlen -> %ld\n", lib_res);
 		printf("ft_strlen -> %ld\n", ft_res);
 		return (0);

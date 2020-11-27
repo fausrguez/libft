@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:09:53 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:33:57 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/27 15:02:39 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	main(void)
 	char c;
 
 	print_function_info("isdigit", "Tests for \
-	a decimal digit character");
+a decimal digit character");
 	c = '8';
 	valid_on_number(c);
 	c = 'b';
