@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:13:40 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 16:44:51 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 09:08:02 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,5 @@ void	*ft_memset(void *str, int c, t_lui len)
 	{
 		ptr[i++] = c;
 	}
-
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 18:13:44 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 08:43:32 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 09:07:45 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	ft_bzero(void *str, t_lui len)
 
 	ptr = str;
 	i = 0;
-	while(len--)
+	while (len--)
 	{
-		ptr[i++]=0;
+		ptr[i++] = 0;
 	}
 }
