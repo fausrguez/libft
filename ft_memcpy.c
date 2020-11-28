@@ -6,11 +6,15 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/28 08:58:42 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 12:26:40 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 14:20:59 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Copies n bytes from memory area src to memory area dst
+*/
 
 void	*ft_memcpy(void *dest, const void *src, t_lui len)
 {

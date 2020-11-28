@@ -6,11 +6,16 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:17:48 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 12:13:56 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 14:23:38 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Appends  the src string to the dest string, overwriting the terminating
+** null byte ('\\0') at the end of dest, and then adds a terminating null byte.
+*/
 
 t_lui	ft_strlcat(char *dest, const char *src, t_lui size)
 {
