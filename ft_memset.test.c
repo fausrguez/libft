@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 15:31:30 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 16:44:59 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 08:41:24 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,8 @@ void *str, int c, t_lui len)
 	{
 		print_error("lib_result is not the same as the ft_result");
 	}
-	print_result_str(lib_result, ft_result);
-	printf("lib_res -> |%lu|\n", sizeof lib_result);
-	printf("ft_res -> |%lu|\n", sizeof ft_result);
+	printf("lib_res -> %lu |%s|\n", sizeof lib_result, lib_result);
+	printf("ft_res  -> %lu |%s|\n", sizeof ft_result, ft_result);
 }
 
 int		main(void)
@@ -43,7 +42,8 @@ int		main(void)
 	print_function_info("memset", "Writes len \
 bytes of value c (converted to an unsigned char) \
 to the string b. Returns its first argument");
-
 	trigger_test("Empty string", str, 'c', 18);
+	strcpy(str, "To flama chiquillo");
+	trigger_test("Regular string", str, '$', 6);
 	return (0);
 }

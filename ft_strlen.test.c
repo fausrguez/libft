@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 12:32:04 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 15:03:10 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 08:40:44 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ is not the same");
 	{
 		print_success();
 		printf("lib_res -> %ld\n", lib_res);
-		printf("ft_res -> %ld\n", ft_res);
+		printf("ft_res  -> %ld\n", ft_res);
 		return (1);
 	}
 }
