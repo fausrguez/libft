@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 15:30:49 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 08:33:20 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "types.h" 
 
+void	ft_bzero(void *s, t_lui n);
 int     ft_isalnum(int c);
 int     ft_isalpha(int c);
 int     ft_isascii(int c);
