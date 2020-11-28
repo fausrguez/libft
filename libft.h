@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 12:20:26 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 12:24:28 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int     ft_isalpha(int c);
 int     ft_isascii(int c);
 int     ft_isdigit(int c);
 int     ft_isprint(int c);
+void	*ft_memcpy(void *dest, const void *src, t_lui n);
 void	*ft_memset(void *str, int c, t_lui len);
 char    *ft_strcat(char *dest, char *src);
 char    *ft_strchr(char *str, int c);
