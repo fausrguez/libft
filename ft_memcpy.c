@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/28 08:58:42 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 12:25:36 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 12:26:40 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, t_lui len)
 	unsigned char	*ptr2;
 	unsigned int	i;
 
-	if(dest == 0 && src == 0)
+	if (dest == 0 && src == 0)
 	{
 		return (dest);
 	}

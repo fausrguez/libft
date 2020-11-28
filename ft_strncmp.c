@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:18:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 10:53:36 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 12:27:43 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ int	ft_strncmp(char *s1, char *s2, t_ui n)
 	i = 0;
 	while ((str1[i] || str2[i]) && i < n)
 	{
-		if(str1[i] != str2[i])
+		if (str1[i] != str2[i])
 		{
 			return (str1[i] - str2[i]);
 		}
 		i++;
 	}
-		return (0);
+	return (0);
 }
