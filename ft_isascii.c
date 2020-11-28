@@ -6,15 +6,11 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:08:37 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:08:39 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 10:13:40 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	if (c >= 40 && c <= 127)
-	{
-		return (1);
-	}
-	return (0);
+	return (c >= 0 && c <= 127);
 }

@@ -6,30 +6,28 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:17:48 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:17:52 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 12:13:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_lui	ft_strlcat(char *dest, char *src, unsigned int size)
+t_lui	ft_strlcat(char *dest, const char *src, t_lui size)
 {
-	unsigned int c;
-	unsigned int src_size;
-	unsigned int dest_size;
+	t_lui dest_size;
+	t_lui i;
 
-	c = 0;
-	src_size = ft_strlen(src);
 	dest_size = ft_strlen(dest);
-	while (c < size - 1 && c <= src_size)
+	i = 0;
+	if (size <= dest_size)
 	{
-		dest[dest_size + c] = src[c];
-		c++;
+		return (size + ft_strlen(src));
 	}
-	if (c == dest_size || c <= 0)
+	while (src[i] && dest_size + i < (size - 1))
 	{
-		return (0);
+		dest[dest_size + i] = src[i];
+		i++;
 	}
-	dest[dest_size + c] = '\0';
-	return (ft_strlen(dest));
+	dest[dest_size + i] = '\0';
+	return (ft_strlen(src) + dest_size);
 }

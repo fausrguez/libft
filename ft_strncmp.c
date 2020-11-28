@@ -6,23 +6,28 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:18:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 11:18:39 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 10:53:36 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
-{
-	unsigned int c;
+#include "libft.h"
 
-	if (n == 0)
+int	ft_strncmp(char *s1, char *s2, t_ui n)
+{
+	unsigned char	*str1;
+	unsigned char	*str2;
+	t_ui			i;
+
+	str1 = (unsigned char*)s1;
+	str2 = (unsigned char*)s2;
+	i = 0;
+	while ((str1[i] || str2[i]) && i < n)
 	{
+		if(str1[i] != str2[i])
+		{
+			return (str1[i] - str2[i]);
+		}
+		i++;
+	}
 		return (0);
-	}
-	c = 0;
-	while (s1[c] != '\0' && s2[c] != '\0' &&
-		s1[c] == s2[c] && c < n - 1)
-	{
-		c++;
-	}
-	return (s1[c] - s2[c]);
 }

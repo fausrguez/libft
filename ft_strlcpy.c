@@ -6,29 +6,30 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:18:09 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/27 15:20:16 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/11/28 11:45:54 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_lui	ft_strlcpy(char *dest, char *src, unsigned int size)
+t_lui	ft_strlcpy(char *dest, const char *src, t_lui size)
 {
-	unsigned int c;
+	t_lui i;
 
-	c = 0;
-	if (size > 0)
+	if(dest == 0 && src == 0)
 	{
-		while (src[c] != '\0' && c + 1 < size)
-		{
-			dest[c] = src[c];
-			c++;
-		}
-		while ((c <= size || src[c] != '\0'))
-		{
-			dest[c] = 0;
-			c++;
-		}
+		return (0);
 	}
+	if(size == 0)
+	{
+		return (ft_strlen(src));		
+	}
+	i = 0;
+	while (i < (size - 1) && src[i] !='\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = 0;
 	return (ft_strlen(src));
 }
