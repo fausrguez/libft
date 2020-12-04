@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 13:54:58 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 15:30:10 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 21:03:05 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,16 @@ static void	add_number(const char *str, int *res)
 	}
 }
 
+static char	*skip_empty_characters(const char *str)
+{
+	while ((*str == '\n') || (*str == '\t') || (*str == '\v') ||
+		(*str == ' ') || (*str == '\f') || (*str == '\r'))
+	{
+		str++;
+	}
+	return ((char *)str);
+}
+
 /*
 ** Converts the initial portion of the string pointed to by str to int
 ** representation.
@@ -35,25 +45,21 @@ static void	add_number(const char *str, int *res)
 
 int			ft_atoi(const char *str)
 {
-	unsigned int	is_minus;
+	unsigned int	is_neg;
 	int				res;
 
 	res = 0;
-	is_minus = 0;
-	while ((*str == '\n') || (*str == '\t') || (*str == '\v') ||
-		(*str == ' ') || (*str == '\f') || (*str == '\r'))
-	{
-		str++;
-	}
+	is_neg = 0;
+	str = skip_empty_characters(str);
 	if (*str == '-' || *str == '+')
 	{
-		is_minus = *str == '-' ? 1 : 0;
+		is_neg = *str == '-' ? 1 : 0;
 		str++;
 	}
 	if (ft_isdigit(*str))
 	{
 		add_number(str, &res);
-		return (is_minus ? -res : res);
+		return (is_neg ? -res : res);
 	}
 	return (0);
 }
