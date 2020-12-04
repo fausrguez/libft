@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 11:49:30 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 13:14:58 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ char	*ft_strchr(char *str, int c);
 t_lui	ft_strlcat(char *dest, const char *src, t_lui size);
 t_lui	ft_strlcpy(char *dest, const char *src, t_lui size);
 t_lui	ft_strlen(const char *str);
-int		ft_strncmp(char *s1, char *s2, t_ui n);
+int		ft_strncmp(char *str1, char *str2, t_ui len);
+char	*ft_strnstr(const char *str1, const char *str2, t_lui len);
 char	*ft_strrchr(char *str, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);

@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:18:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 11:37:57 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 12:17:58 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,24 @@
 
 /*
 ** Compares not more than n character. Returns an integer greater than,
-** equal to, or less than 0, according as the string s1 is greater than,
-** equal to, or less than the string s2.
+** equal to, or less than 0, according as the string str1 is greater than,
+** equal to, or less than the string str2.
 */
 
-int	ft_strncmp(char *s1, char *s2, t_ui len)
+int	ft_strncmp(char *str1, char *str2, t_ui len)
 {
-	unsigned char	*str1;
-	unsigned char	*str2;
+	unsigned char	*ptr1;
+	unsigned char	*ptr2;
 	t_ui			i;
 
-	str1 = (unsigned char*)s1;
-	str2 = (unsigned char*)s2;
+	ptr1 = (unsigned char*)str1;
+	ptr2 = (unsigned char*)str2;
 	i = 0;
-	while ((str1[i] || str2[i]) && i < len)
+	while ((ptr1[i] || ptr2[i]) && i < len)
 	{
-		if (str1[i] != str2[i])
+		if (ptr1[i] != ptr2[i])
 		{
-			return (str1[i] - str2[i]);
+			return (ptr1[i] - ptr2[i]);
 		}
 		i++;
 	}
