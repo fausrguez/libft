@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 19:33:17 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 20:47:02 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # include "stddef.h"
-# include "stdlib.h"
+# include <stdlib.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *str, size_t n);
