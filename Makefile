@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/12/04 13:59:01 by farodrig      ########   odam.nl          #
+#    Updated: 2020/12/04 15:39:16 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ FLAGS := -Wall -Wextra -Werror -pedantic -std=c89
 function_files := \
 					./ft_atoi.c \
 					./ft_bzero.c \
+					./ft_calloc.c \
 					./ft_isalnum.c \
 					./ft_isalpha.c \
 					./ft_isascii.c \
