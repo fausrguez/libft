@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:18:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 12:17:58 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:28:23 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@
 ** equal to, or less than the string str2.
 */
 
-int	ft_strncmp(char *str1, char *str2, t_ui len)
+int	ft_strncmp(char *str1, char *str2, size_t len)
 {
 	unsigned char	*ptr1;
 	unsigned char	*ptr2;
-	t_ui			i;
+	size_t			i;
 
 	ptr1 = (unsigned char*)str1;
 	ptr2 = (unsigned char*)str2;

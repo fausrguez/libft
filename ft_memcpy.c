@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/28 08:58:42 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 14:20:59 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** Copies n bytes from memory area src to memory area dst
 */
 
-void	*ft_memcpy(void *dest, const void *src, t_lui len)
+void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
 	unsigned char	*ptr;
 	unsigned char	*ptr2;

@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 11:47:46 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 12:04:24 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 ** bytes.
 */
 
-int	ft_memcmp(const void *str1, const void *str2, t_lui len)
+int	ft_memcmp(const void *str1, const void *str2, size_t len)
 {
-	t_lui	i;
+	size_t	i;
 
 	i = 0;
 	while (len--)

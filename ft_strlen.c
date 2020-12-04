@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:18:24 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 14:28:12 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 ** terminating null byte.
 */
 
-t_lui	ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-	t_lui counter;
+	size_t counter;
 
 	counter = 0;
 	while (*str != '\0')

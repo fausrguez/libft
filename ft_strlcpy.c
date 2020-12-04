@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:18:09 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 14:29:58 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 ** NUL-terminating the result if dstsize is not 0. Returns the length of src.
 */
 
-t_lui	ft_strlcpy(char *dest, const char *src, t_lui size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	t_lui i;
+	size_t i;
 
 	if (dest == 0 && src == 0)
 	{

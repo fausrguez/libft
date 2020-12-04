@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:13:40 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 14:21:31 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** to the string b. Returns its first argument.
 */
 
-void	*ft_memset(void *str, int c, t_lui len)
+void	*ft_memset(void *str, int c, size_t len)
 {
 	unsigned char	*ptr;
 	unsigned int	i;

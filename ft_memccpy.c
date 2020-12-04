@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/28 14:37:22 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 13:53:36 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:28:23 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 ** returned.  Otherwise, len bytes are copied, and a NULL pointer is returned.
 */
 
-void	*ft_memccpy(void *dest, const void *src, int c, t_lui len)
+void	*ft_memccpy(void *dest, const void *src, int c, size_t len)
 {
 	unsigned char	*str1;
 	unsigned char	*str2;
-	t_ui			i;
+	size_t			i;
 
 	str1 = (unsigned char*)dest;
 	str2 = (unsigned char*)src;

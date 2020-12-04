@@ -6,12 +6,11 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 15:41:53 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 15:47:51 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:29:10 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "stdlib.h"
 
 /*
 ** Allocates sufficient memory for a copy of the string str1, does the copy,
@@ -21,7 +20,7 @@
 char	*ft_strdup(const char *str1)
 {
 	char	*str;
-	t_lui	str1_len;
+	size_t	str1_len;
 
 	str1_len = ft_strlen(str1) + 1;
 	str = (char *)malloc(sizeof(char) * str1_len);

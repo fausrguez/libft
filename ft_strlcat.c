@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:17:48 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 14:23:38 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@
 ** null byte ('\\0') at the end of dest, and then adds a terminating null byte.
 */
 
-t_lui	ft_strlcat(char *dest, const char *src, t_lui size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	t_lui dest_size;
-	t_lui i;
+	size_t dest_size;
+	size_t i;
 
 	dest_size = ft_strlen(dest);
 	i = 0;

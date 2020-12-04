@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 12:10:46 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 13:49:17 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 ** occurrence of str2 is returned.
 */
 
-char	*ft_strnstr(const char *str1, const char *str2, t_lui len)
+char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 {
-	t_lui str2_len;
+	size_t str2_len;
 
 	if (*str2 == 0)
 	{

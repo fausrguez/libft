@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 11:21:41 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 11:38:15 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:28:23 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 ** exists within n bytes.
 */
 
-void	*ft_memchr(const void *str, int c, t_lui len)
+void	*ft_memchr(const void *str, int c, size_t len)
 {
 	unsigned char	*ptr;
-	t_ui			i;
+	size_t			i;
 
 	ptr = (unsigned char*)str;
 	i = 0;

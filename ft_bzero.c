@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 18:13:44 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 12:39:58 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** Writes len zeroed bytes to the string str.
 */
 
-void	ft_bzero(void *str, t_lui len)
+void	ft_bzero(void *str, size_t len)
 {
 	unsigned char	*ptr;
 	unsigned int	i;

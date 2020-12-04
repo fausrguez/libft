@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 10:22:08 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 11:19:14 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	*copy_from_back_to_front(
 	void *dest,
 	const void *src,
-	t_lui len
+	size_t len
 )
 {
 	while (len--)
@@ -28,10 +28,10 @@ static void	*copy_from_back_to_front(
 static void	*copy_from_front_to_back(
 	void *dest,
 	const void *src,
-	t_lui len
+	size_t len
 )
 {
-	t_lui	i;
+	size_t	i;
 
 	i = 0;
 	while (i < len)
@@ -48,7 +48,7 @@ static void	*copy_from_front_to_back(
 ** Returns the original value of dest.
 */
 
-void		*ft_memmove(void *dest, const void *src, t_lui len)
+void		*ft_memmove(void *dest, const void *src, size_t len)
 {
 	if (dest == 0 && src == 0)
 	{
