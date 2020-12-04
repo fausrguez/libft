@@ -1,37 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strncmp.c                                       :+:    :+:            */
+/*   ft_memchr.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/11/27 11:18:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 11:37:57 by farodrig      ########   odam.nl         */
+/*   Created: 2020/12/04 11:21:41 by farodrig      #+#    #+#                 */
+/*   Updated: 2020/12/04 11:38:15 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Compares not more than n character. Returns an integer greater than,
-** equal to, or less than 0, according as the string s1 is greater than,
-** equal to, or less than the string s2.
+** Locates the first occurrence of c (converted to an unsigned char) in
+** string s. Returns a pointer to the byte located, or NULL if no such byte
+** exists within n bytes.
 */
 
-int	ft_strncmp(char *s1, char *s2, t_ui len)
+void	*ft_memchr(const void *str, int c, t_lui len)
 {
-	unsigned char	*str1;
-	unsigned char	*str2;
+	unsigned char	*ptr;
 	t_ui			i;
 
-	str1 = (unsigned char*)s1;
-	str2 = (unsigned char*)s2;
+	ptr = (unsigned char*)str;
 	i = 0;
-	while ((str1[i] || str2[i]) && i < len)
+	while (len--)
 	{
-		if (str1[i] != str2[i])
+		if (ptr[i] == (unsigned char)c)
 		{
-			return (str1[i] - str2[i]);
+			return (ptr + i);
 		}
 		i++;
 	}
