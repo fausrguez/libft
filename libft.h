@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 15:39:03 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/04 15:43:57 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	*ft_memmove(void *dest, const void *src, t_lui len);
 void	*ft_memset(void *str, int c, t_lui len);
 char	*ft_strcat(char *dest, char *src);
 char	*ft_strchr(char *str, int c);
+char	*ft_strdup(const char *str1);
 t_lui	ft_strlcat(char *dest, const char *src, t_lui size);
 t_lui	ft_strlcpy(char *dest, const char *src, t_lui size);
 t_lui	ft_strlen(const char *str);
