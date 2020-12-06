@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/12/05 10:33:50 by farodrig      ########   odam.nl          #
+#    Updated: 2020/12/05 20:26:59 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ function_files := \
 					./ft_memcpy.c \
 					./ft_memmove.c \
 					./ft_memset.c \
+					./ft_split.c \
 					./ft_strchr.c \
 					./ft_strdup.c \
 					./ft_strjoin.c \
@@ -58,7 +59,7 @@ functions:
 	$(call make_object_files,$(function_files))
 
 %.o: %.c
-	$(CC) -c $(FLAGS) $< -o $@
+	@$(CC) -c $(FLAGS) $< -o $@
 
 clean:
 	find . -name "*.o" -delete
