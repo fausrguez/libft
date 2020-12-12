@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 16:37:58 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 16:46:47 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+char	*ft_itoa(int n);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t len);
 void	*ft_memchr(const void *str, int c, size_t len);
 int		ft_memcmp(const void *str1, const void *str2, size_t len);
@@ -33,6 +34,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len);
 void	*ft_memset(void *str, int c, size_t len);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *str, int fd);
+void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *str, int fd);
 char	**ft_split(char const *str, char c);
 char	*ft_strchr(char *str, int c);
