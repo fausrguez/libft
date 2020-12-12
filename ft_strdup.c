@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 15:41:53 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 19:29:10 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 17:54:31 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strdup(const char *str1)
 	size_t	str1_len;
 
 	str1_len = ft_strlen(str1) + 1;
-	str = (char *)malloc(sizeof(char) * str1_len);
+	str = (char *)ft_calloc(str1_len, sizeof(char));
 	if (str == 0)
 	{
 		return (0);

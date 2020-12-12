@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/28 14:37:22 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 19:28:23 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 18:47:59 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t len)
 	str1 = (unsigned char*)dest;
 	str2 = (unsigned char*)src;
 	i = 0;
-	while (len--)
+	while (len)
 	{
 		str1[i] = str2[i];
 		if (str2[i] == (unsigned char)c)
@@ -36,6 +36,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t len)
 			return (str1 + (i + 1));
 		}
 		i++;
+		len--;
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 10:22:08 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 19:34:47 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,9 @@ static void	*copy_from_back_to_front(
 	size_t len
 )
 {
-	while (len--)
+	while (len)
 	{
+		len--;
 		((char *)dest)[len] = ((char *)src)[len];
 	}
 	return (dest);
@@ -50,7 +51,7 @@ static void	*copy_from_front_to_back(
 
 void		*ft_memmove(void *dest, const void *src, size_t len)
 {
-	if (dest == 0 && src == 0)
+	if (!dest && !src)
 	{
 		return (dest);
 	}

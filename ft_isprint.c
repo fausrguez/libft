@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:10:20 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 14:19:11 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 18:47:15 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,5 @@
 
 int	ft_isprint(int c)
 {
-	if ((c >= 32 && c <= 126))
-	{
-		return (1);
-	}
-	return (0);
+	return ((c >= 32 && c <= 126));
 }

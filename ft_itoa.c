@@ -6,12 +6,11 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/12 09:14:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 15:44:28 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 18:42:03 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int			absolute_value(int n)
 {
@@ -43,7 +42,8 @@ char				*ft_itoa(int n)
 	char			*str;
 
 	n_digits = count_digits(n);
-	if (!(str = (char*)ft_calloc(n_digits + 2, sizeof(char))))
+	str = (char*)ft_calloc(n_digits + 2, sizeof(char));
+	if (str == 0)
 	{
 		return (0);
 	}

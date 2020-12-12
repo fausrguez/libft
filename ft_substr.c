@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 19:36:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 19:59:47 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 18:52:22 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
 	char *substr;
 
-	if (str == 0)
+	if (!str)
 	{
 		return (0);
 	}
-	substr = (char *)malloc(sizeof(char) * len + 1);
+	substr = (char *)ft_calloc(len + 1, sizeof(char));
 	if (substr == 0)
 	{
 		return (0);

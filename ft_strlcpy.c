@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:18:09 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 18:51:12 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t i;
 
-	if (dest == 0 && src == 0)
+	if (!dest && !src)
 	{
 		return (0);
 	}
-	if (size == 0)
+	if (!size)
 	{
 		return (ft_strlen(src));
 	}

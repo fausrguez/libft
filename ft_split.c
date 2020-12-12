@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/05 18:58:33 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/06 19:34:58 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 18:05:16 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,14 @@ char		**ft_split(char const *str, char c)
 		return (0);
 	}
 	str_len = ft_strlen(str);
-	if (!(arr = (char **)malloc(sizeof(char*) * str_len + 1)))
+	if (!(arr = (char **)ft_calloc(str_len + 1, sizeof(char*))))
 	{
 		return (0);
 	}
 	dimension = 0;
 	while (*str)
 	{
-		if (!(buff = (char *)malloc(sizeof(char) * str_len + 1)))
+		if (!(buff = (char *)ft_calloc(str_len + 1, sizeof(char))))
 		{
 			free_all(arr, dimension);
 			return (0);
@@ -62,7 +62,7 @@ char		**ft_split(char const *str, char c)
 		if (buff_len > 0)
 		{
 			buff[buff_len++] = 0;
-			if (!(arr[dimension] = (char *)malloc(sizeof(char) * buff_len)))
+			if (!(arr[dimension] = (char *)ft_calloc(buff_len, sizeof(char))))
 			{
 				free(buff);
 				free_all(arr, dimension);

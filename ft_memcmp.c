@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 11:47:46 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 18:48:12 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,14 @@ int	ft_memcmp(const void *str1, const void *str2, size_t len)
 	size_t	i;
 
 	i = 0;
-	while (len--)
+	while (len)
 	{
 		if (((unsigned char *)str1)[i] != ((unsigned char *)str2)[i])
 		{
 			return (((unsigned char *)str1)[i] - ((unsigned char *)str2)[i]);
 		}
 		i++;
+		len--;
 	}
 	return (0);
 }

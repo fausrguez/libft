@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 12:10:46 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/04 19:27:56 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 18:38:27 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,14 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 		return ((char *)str1);
 	}
 	str2_len = ft_strlen(str2);
-	while (*str1 != 0 && len-- >= str2_len)
+	while (*str1 != 0 && len >= str2_len)
 	{
 		if (*str1 == *str2 && ft_memcmp(str1, str2, str2_len) == 0)
 		{
 			return ((char *)str1);
 		}
 		str1++;
+		len--;
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 20:45:39 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/06 19:40:26 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 18:50:19 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ char	*ft_strjoin(char const *str1, char const *str2)
 	}
 	str1_len = ft_strlen(str1);
 	str_len = str1_len + ft_strlen(str2) + 2;
-	str = (char *)malloc(sizeof(char) * str_len);
-	if (str == 0)
+	str = (char *)ft_calloc(str_len, sizeof(char));
+	if (!str)
 	{
 		return (0);
 	}
