@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/12/05 20:26:59 by farodrig      ########   odam.nl          #
+#    Updated: 2020/12/12 09:33:28 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ function_files := \
 					./ft_isascii.c \
 					./ft_isdigit.c \
 					./ft_isprint.c \
+					./ft_itoa.c \
 					./ft_memccpy.c \
 					./ft_memchr.c \
 					./ft_memcmp.c \
