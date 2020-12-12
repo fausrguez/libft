@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 16:13:06 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/12/12 16:32:43 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t len);
 void	*ft_memmove(void *dest, const void *src, size_t len);
 void	*ft_memset(void *str, int c, size_t len);
 void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *str, int fd);
 char	**ft_split(char const *str, char c);
 char	*ft_strchr(char *str, int c);
 char	*ft_strdup(const char *str1);
