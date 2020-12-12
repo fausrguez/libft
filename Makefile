@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/12/12 09:33:28 by farodrig      ########   odam.nl          #
+#    Updated: 2020/12/12 15:55:19 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ function_files := \
 					./ft_strlcat.c \
 					./ft_strlcpy.c \
 					./ft_strlen.c \
+					./ft_strmapi.c \
 					./ft_strncmp.c \
 					./ft_strnstr.c \
 					./ft_strrchr.c \
