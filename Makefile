@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/12/13 20:38:43 by farodrig      ########   odam.nl          #
+#    Updated: 2020/12/13 20:51:34 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,7 @@ function_files := \
 					./ft_tolower.c \
 					./ft_toupper.c
 bonus_files := \
+					./ft_lstadd_back.c \
 					./ft_lstadd_front.c \
 					./ft_lstlast.c \
 					./ft_lstnew.c \
