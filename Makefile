@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/12/13 20:23:32 by farodrig      ########   odam.nl          #
+#    Updated: 2020/12/13 20:29:46 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,7 @@ function_files := \
 bonus_files := \
 					./ft_lstadd_front.c \
 					./ft_lstnew.c \
+					./ft_lstsize.c
 
 define make_object_files
 	@for file in `echo $(1) | sed -e 's/\.\///g' -e 's/\.c/\.o/g'`; do \
