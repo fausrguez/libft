@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/12/12 16:42:28 by farodrig      ########   odam.nl          #
+#    Updated: 2020/12/13 20:16:27 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,8 @@ function_files := \
 					./ft_substr.c \
 					./ft_tolower.c \
 					./ft_toupper.c
+bonus_files := \
+					./ft_lstnew.c\
 
 define make_object_files
 	@for file in `echo $(1) | sed -e 's/\.\///g' -e 's/\.c/\.o/g'`; do \
@@ -75,8 +77,10 @@ fclean: clean
 
 re: fclean all
 
-bonus:
-	echo "BONUS"
+bonus: 
+	$(MAKE) functions
+	$(call make_object_files,$(bonus_files))
+	ar rc $(NAME).a $(shell echo $(function_files) $(bonus_files) | sed -e 's/\.c/\.o/g')
 
 norm:
 	@norminette -R CheckForbiddenSourceHeader `echo $(function_files)` *.h
