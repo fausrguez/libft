@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2021/01/09 14:15:07 by farodrig      ########   odam.nl          #
+#    Updated: 2021/01/09 14:57:11 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,6 +54,7 @@ bonus_files := \
 					./ft_lstdelone.c \
 					./ft_lstiter.c \
 					./ft_lstlast.c \
+					./ft_lstmap.c \
 					./ft_lstnew.c \
 					./ft_lstsize.c
 
