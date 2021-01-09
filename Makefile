@@ -6,7 +6,7 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2020/12/13 20:51:34 by farodrig      ########   odam.nl          #
+#    Updated: 2021/01/09 13:43:13 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,7 @@ function_files := \
 bonus_files := \
 					./ft_lstadd_back.c \
 					./ft_lstadd_front.c \
+					./ft_lstdelone.c \
 					./ft_lstlast.c \
 					./ft_lstnew.c \
 					./ft_lstsize.c
@@ -87,6 +88,6 @@ bonus:
 	ar rc $(NAME).a $(shell echo $(function_files) $(bonus_files) | sed -e 's/\.c/\.o/g')
 
 norm:
-	@norminette -R CheckForbiddenSourceHeader `echo $(function_files)` *.h
+	@norminette -R CheckForbiddenSourceHeader `echo $(function_files) $(bonus_files)` *.h
 
 .PHONY: all fclean clean re test_suite

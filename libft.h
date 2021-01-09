@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/13 20:51:21 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/09 13:24:27 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int		ft_isprint(int c);
 char	*ft_itoa(int n);
 void	ft_lstadd_back(t_list **list, t_list *new);
 void	ft_lstadd_front(t_list **list, t_list *new);
+void	ft_lstdelone(t_list *list, void (*del)(void*));
 t_list	*ft_lstlast(t_list *list);
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *list);
