@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 20:45:39 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 18:50:19 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/10 13:24:11 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 ** Allocates (with malloc(3)) and returns a newstring, which is the result of
-** the concatenationof 's1' and 's2'. Returns NULL if the allocation fails.
+** the concatenation of 's1' and 's2'. Returns NULL if the allocation fails.
 */
 
 char	*ft_strjoin(char const *str1, char const *str2)

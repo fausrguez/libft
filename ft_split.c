@@ -6,18 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/05 18:58:33 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 18:05:16 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/10 15:09:15 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-
-/*
-** Allocates (with malloc(3)) and returns an arrayof strings obtained by
-** splitting 's' using the character 'c' as a delimiter. The array must beended
-** by a NULL pointer. Returns NULL if the allocation fails
-*/
 
 static void	free_all(char **arr, unsigned int dimension)
 {
@@ -28,23 +22,37 @@ static void	free_all(char **arr, unsigned int dimension)
 	free(arr);
 }
 
-char		**ft_split(char const *str, char c)
+static int	copy_buff(
+	char **arr,
+	unsigned int *dimension,
+	char *buff,
+	unsigned int buff_len
+)
 {
-	char			**arr;
-	size_t			str_len;
+	buff[buff_len++] = 0;
+	if (!(arr[*dimension] = (char *)ft_calloc(buff_len, sizeof(char))))
+	{
+		free(buff);
+		free_all(arr, *dimension);
+		return (0);
+	}
+	ft_strlcpy(arr[*dimension], buff, buff_len);
+	free(buff);
+	*dimension += 1;
+	return (1);
+}
+
+static char	**str_split(
+	char *str,
+	char **arr,
+	char c,
+	size_t str_len
+)
+{
 	char			*buff;
 	unsigned int	buff_len;
 	unsigned int	dimension;
 
-	if (!str)
-	{
-		return (0);
-	}
-	str_len = ft_strlen(str);
-	if (!(arr = (char **)ft_calloc(str_len + 1, sizeof(char*))))
-	{
-		return (0);
-	}
 	dimension = 0;
 	while (*str)
 	{
@@ -60,21 +68,33 @@ char		**ft_split(char const *str, char c)
 			str++;
 		}
 		if (buff_len > 0)
-		{
-			buff[buff_len++] = 0;
-			if (!(arr[dimension] = (char *)ft_calloc(buff_len, sizeof(char))))
-			{
-				free(buff);
-				free_all(arr, dimension);
+			if (copy_buff(arr, &dimension, buff, buff_len) == 0)
 				return (0);
-			}
-			ft_strlcpy(arr[dimension], buff, buff_len);
-			free(buff);
-			buff_len = 0;
-			dimension++;
-		}
 		str++;
 	}
 	arr[dimension] = 0;
 	return (arr);
+}
+
+/*
+** Allocates (with malloc(3)) and returns an array of strings obtained by
+** splitting 's' using the character 'c' as a delimiter. The array must be
+** ended by a NULL pointer. Returns NULL if the allocation fails
+*/
+
+char		**ft_split(char const *str, char c)
+{
+	char	**arr;
+	size_t	str_len;
+
+	if (!str)
+	{
+		return (0);
+	}
+	str_len = ft_strlen(str);
+	if (!(arr = (char **)ft_calloc(str_len + 1, sizeof(char *))))
+	{
+		return (0);
+	}
+	return (str_split((char *)str, arr, c, str_len));
 }
