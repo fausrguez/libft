@@ -6,12 +6,12 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2021/01/10 15:26:21 by farodrig      ########   odam.nl          #
+#    Updated: 2021/01/17 17:10:32 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft
-FLAGS := -Wall -Wextra -Werror -pedantic -std=c99
+FLAGS := -Wall -Wextra -Werror -pedantic -std=c89
 function_files := \
 					./ft_atoi.c \
 					./ft_bzero.c \
@@ -64,9 +64,7 @@ define make_object_files
 	done
 endef
 
-all: 
-	$(MAKE) fclean 
-	$(MAKE) $(NAME)
+all: $(NAME)
 
 $(NAME): functions
 	ar rc $(NAME).a $(shell echo $(function_files) | sed -e 's/\.c/\.o/g')

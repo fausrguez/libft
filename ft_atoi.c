@@ -6,13 +6,13 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 13:54:58 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/09 20:58:21 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/17 17:11:11 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	add_number(const char *str, long long *res)
+static void	add_number(const char *str, long *res)
 {
 	while (ft_isdigit(*str))
 	{
@@ -46,7 +46,7 @@ static char	*skip_empty_characters(const char *str)
 int			ft_atoi(const char *str)
 {
 	unsigned int	is_neg;
-	long long		res;
+	long			res;
 
 	res = 0;
 	is_neg = 0;
