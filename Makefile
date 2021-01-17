@@ -6,12 +6,12 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2021/01/17 17:10:32 by farodrig      ########   odam.nl          #
+#    Updated: 2021/01/17 21:26:15 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft
-FLAGS := -Wall -Wextra -Werror -pedantic -std=c89
+FLAGS := -Wall -Wextra -Werror
 function_files := \
 					./ft_atoi.c \
 					./ft_bzero.c \
