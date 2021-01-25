@@ -6,11 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/13 20:03:54 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/13 20:11:03 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/25 11:54:50 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /*
 ** Allocates (with malloc(3)) and returns a new element. The variable 'content'

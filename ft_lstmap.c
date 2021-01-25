@@ -6,11 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/09 14:16:48 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/09 19:32:08 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/25 11:54:13 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /*
 ** Iterates the list 'lst' and applies the function 'f' to the content of each

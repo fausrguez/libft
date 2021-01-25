@@ -6,11 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/13 21:08:59 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/09 13:46:15 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/25 11:55:22 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /*
 ** Takes as a parameter an element and frees the memory of the element's

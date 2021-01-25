@@ -6,12 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/05 18:58:33 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/24 15:29:16 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/25 11:55:37 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 static int		cpy_word(
 	char **arr,

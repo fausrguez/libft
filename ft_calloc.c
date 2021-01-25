@@ -6,11 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 15:30:55 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 18:42:31 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/25 11:54:05 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /*
 ** Allocates enough space for count objects that are size bytes of memory each

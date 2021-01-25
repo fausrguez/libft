@@ -6,16 +6,13 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/15 16:18:46 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/25 11:56:18 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdlib.h>
-# include <unistd.h>
-# include <limits.h>
 # include <stddef.h>
 
 typedef struct	s_list

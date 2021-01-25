@@ -6,11 +6,12 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 13:54:58 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/17 17:11:11 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/01/25 11:53:21 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 
 static void	add_number(const char *str, long *res)
 {
