@@ -6,11 +6,11 @@
 #    By: farodrig <farodrig@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/14 14:17:26 by farodrig      #+#    #+#                  #
-#    Updated: 2021/01/17 21:26:15 by farodrig      ########   odam.nl          #
+#    Updated: 2021/02/05 12:39:06 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft
+NAME = libft.a
 FLAGS := -Wall -Wextra -Werror
 function_files := \
 					./ft_atoi.c \
@@ -58,37 +58,30 @@ bonus_files := \
 					./ft_lstnew.c \
 					./ft_lstsize.c
 
-define make_object_files
-	@for file in `echo $(1) | sed -e 's/\.\///g' -e 's/\.c/\.o/g'`; do \
-		$(MAKE) $$file;\
-	done
-endef
+function_objects := ${function_files:.c=.o}
+bonus_objects := ${bonus_files:.c=.o}
 
 all: $(NAME)
-
-$(NAME): functions
-	ar rc $(NAME).a $(shell echo $(function_files) | sed -e 's/\.c/\.o/g')
-
-functions:
-	$(call make_object_files,$(function_files))
 
 %.o: %.c
 	@$(CC) -c $(FLAGS) $< -o $@
 
+$(NAME): ${function_objects}
+	ar rc $(NAME) $(function_objects)
+
 clean:
-	find . -name "*.o" -delete
+	rm -rf $(function_objects) $(bonus_objects)
 
 fclean: clean
-	find . -name "*.a" -delete
+	rm -rf $(NAME)
 
 re: fclean all
 
-bonus: 
-	$(MAKE) functions
-	$(call make_object_files,$(bonus_files))
-	ar rc $(NAME).a $(shell echo $(function_files) $(bonus_files) | sed -e 's/\.c/\.o/g')
+bonus: $(function_objects) $(bonus_objects)
+	ar rc $(NAME) $(function_objects) $(bonus_objects)
 
 norm:
-	@norminette -R CheckForbiddenSourceHeader `echo $(function_files) $(bonus_files)` *.h
+	@norminette -R CheckForbiddenSourceHeader \
+	$(function_files) $(bonus_files) *.h
 
-.PHONY: all fclean clean re test_suite
+.PHONY: all fclean clean re bonus norm
