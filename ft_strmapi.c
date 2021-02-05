@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/12 15:45:53 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 15:57:13 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/05 12:42:55 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ char	*ft_strmapi(char const *str, char (*f)(unsigned int, char))
 		return (0);
 	}
 	str_len = ft_strlen(str);
-	if (!(new_str = (char *)ft_calloc(str_len + 1, sizeof(char))))
+	new_str = (char *)ft_calloc(str_len + 1, sizeof(char));
+	if (!new_str)
 	{
 		return (0);
 	}

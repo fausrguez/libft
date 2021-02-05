@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/05 18:58:33 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/25 11:55:37 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/05 12:42:10 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,10 @@ static size_t	count_words(char *str, char c)
 
 static void		free_all(char **arr, size_t dimension)
 {
-	while (dimension--)
+	while (dimension)
 	{
 		free(arr[dimension]);
+		dimension--;
 	}
 	free(arr);
 }

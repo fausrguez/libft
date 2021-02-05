@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/12 09:14:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 18:42:03 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/05 12:45:24 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,8 @@ char				*ft_itoa(int n)
 
 	n_digits = count_digits(n);
 	str = (char*)ft_calloc(n_digits + 2, sizeof(char));
-	if (str == 0)
-	{
+	if (!str)
 		return (0);
-	}
 	if (n < 0)
 	{
 		str[0] = '-';
@@ -59,7 +57,8 @@ char				*ft_itoa(int n)
 	}
 	while (n != 0)
 	{
-		str[--n_digits] = absolute_value((n % 10)) + '0';
+		n_digits--;
+		str[n_digits] = absolute_value((n % 10)) + '0';
 		n /= 10;
 	}
 	return (str);
