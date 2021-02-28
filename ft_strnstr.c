@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 12:10:46 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 18:38:27 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:46:25 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 
 char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 {
-	size_t str2_len;
+	size_t	str2_len;
 
 	if (*str2 == 0)
 	{

@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/09 13:50:24 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/02/04 23:28:56 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:44:03 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 void	ft_lstclear(t_list **list, void (*del)(void*))
 {
-	t_list *next_list;
+	t_list	*next_list;
 
 	while (list && *list)
 	{

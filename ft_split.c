@@ -6,14 +6,14 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/05 18:58:33 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/02/05 12:42:10 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:45:31 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static int		cpy_word(
+static int	cpy_word(
 	char **arr,
 	size_t dimension,
 	char *str,
@@ -54,7 +54,7 @@ static size_t	count_words(char *str, char c)
 	return (words);
 }
 
-static void		free_all(char **arr, size_t dimension)
+static void	free_all(char **arr, size_t dimension)
 {
 	while (dimension)
 	{
@@ -64,7 +64,7 @@ static void		free_all(char **arr, size_t dimension)
 	free(arr);
 }
 
-static void		str_split(char **arr, char *str, char c, size_t n_words)
+static void	str_split(char **arr, char *str, char c, size_t n_words)
 {
 	char	*last_c;
 	size_t	dimension;
@@ -97,7 +97,7 @@ static void		str_split(char **arr, char *str, char c, size_t n_words)
 ** ended by a NULL pointer. Returns NULL if the allocation fails
 */
 
-char			**ft_split(char const *str, char c)
+char	**ft_split(char const *str, char c)
 {
 	char	**arr;
 	size_t	n_words;

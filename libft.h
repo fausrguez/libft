@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/15 16:14:16 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/25 11:56:18 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:48:09 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <stddef.h>
 
-typedef struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
@@ -36,8 +36,8 @@ void			ft_lstdelone(t_list *list, void (*del)(void*));
 void			ft_lstiter(t_list *list, void (*f)(void *));
 t_list			*ft_lstlast(t_list *list);
 t_list			*ft_lstmap(\
-					t_list *list,\
-					void *(*f)(void *),\
+					t_list *list, \
+					void *(*f)(void *), \
 					void (*del)(void *)\
 );
 t_list			*ft_lstnew(void *content);

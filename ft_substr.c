@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 19:36:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 18:52:22 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:47:32 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
-	char *substr;
+	char	*substr;
 
 	if (!str)
 	{

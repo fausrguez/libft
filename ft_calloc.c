@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 15:30:55 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/25 11:54:05 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:42:30 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *mem;
+	void	*mem;
 
 	mem = malloc(size * count);
 	if (!mem)

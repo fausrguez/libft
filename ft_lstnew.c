@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/13 20:03:54 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/25 11:54:50 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:44:20 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *new_list;
+	t_list	*new_list;
 
 	new_list = (t_list*)malloc(sizeof(t_list));
 	if (!new_list)

@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 13:54:58 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/01/25 11:53:21 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 21:51:47 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,14 @@ static void	add_number(const char *str, long *res)
 
 static char	*skip_empty_characters(const char *str)
 {
-	while ((*str == '\n') || (*str == '\t') || (*str == '\v') ||
-		(*str == ' ') || (*str == '\f') || (*str == '\r'))
+	while (str)
 	{
-		str++;
+		if ((*str == '\n') || (*str == '\t') || (*str == '\v'))
+			str++;
+		else if ((*str == ' ') || (*str == '\f') || (*str == '\r'))
+			str++;
+		else
+			break ;
 	}
 	return ((char *)str);
 }
@@ -44,7 +48,7 @@ static char	*skip_empty_characters(const char *str)
 ** representation.
 */
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	unsigned int	is_neg;
 	long			res;
@@ -52,20 +56,20 @@ int			ft_atoi(const char *str)
 	res = 0;
 	is_neg = 0;
 	str = skip_empty_characters(str);
+	if (*str == '-')
+		is_neg = 1;
 	if (*str == '-' || *str == '+')
-	{
-		is_neg = *str == '-' ? 1 : 0;
 		str++;
-	}
 	if (ft_isdigit(*str))
 	{
 		add_number(str, &res);
-		res = is_neg ? -res : res;
+		if (is_neg)
+			res = -res;
 		if ((res < INT_MIN && res > -LONG_MAX) || res >= LONG_MAX)
-		{
 			return (-1);
-		}
-		return (res > INT_MAX || res <= -LONG_MAX ? 0 : res);
+		if (res > INT_MAX || res <= -LONG_MAX)
+			return (0);
+		return (res);
 	}
 	return (0);
 }

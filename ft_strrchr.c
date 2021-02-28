@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/27 11:19:24 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/11/28 14:29:01 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:51:45 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,12 @@ char	*ft_strrchr(char *str, int c)
 	while (str[i] != '\0')
 	{
 		if (str[i] == c)
-		{
 			last_location = i;
-		}
 		i++;
 	}
 	if (str[i] == c)
-	{
 		last_location = i;
-	}
-	return (last_location > -1 ? str + last_location : 0);
+	if (last_location > -1)
+		return (str + last_location);
+	return (0);
 }

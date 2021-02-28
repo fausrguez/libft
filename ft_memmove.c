@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/04 10:22:08 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/12 19:34:47 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:44:52 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static void	*copy_from_front_to_back(
 ** Returns the original value of dest.
 */
 
-void		*ft_memmove(void *dest, const void *src, size_t len)
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	if (!dest && !src)
 	{

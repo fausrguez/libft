@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/13 20:26:32 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/12/13 20:36:14 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:44:35 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 int	ft_lstsize(t_list *list)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (list)

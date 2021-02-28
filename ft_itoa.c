@@ -6,20 +6,22 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/12 09:14:35 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/02/05 12:45:24 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 20:57:13 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int			absolute_value(int n)
+static int	absolute_value(int n)
 {
-	return (n < 0 ? -n : n);
+	if (n < 0)
+		return (-n);
+	return (n);
 }
 
 static unsigned int	count_digits(int n)
 {
-	int n_digits;
+	int	n_digits;
 
 	n_digits = 0;
 	while (n != 0)
@@ -36,7 +38,7 @@ static unsigned int	count_digits(int n)
 ** Returns The string representing the integer.  NULL if the allocation fails.
 */
 
-char				*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	unsigned int	n_digits;
 	char			*str;
