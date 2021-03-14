@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/01/09 14:16:48 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/02/04 23:40:44 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 22:08:44 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,6 @@ t_list	*ft_lstmap(t_list *list, void *(*f)(void *), void (*del)(void *))
 		return (0);
 	}
 	lst_size = ft_lstsize(list);
-	map_list = (t_list *)malloc(lst_size * sizeof(t_list));
-	if (!map_list)
-	{
-		return (0);
-	}
 	map_list = ft_lstnew(f(list->content));
 	list = list->next;
 	while (list)

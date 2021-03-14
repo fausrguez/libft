@@ -6,7 +6,7 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/05 18:58:33 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/02/28 20:45:31 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/02/28 22:05:31 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ static void	free_all(char **arr, size_t dimension)
 	free(arr);
 }
 
-static void	str_split(char **arr, char *str, char c, size_t n_words)
+static int	str_split(char **arr, char *str, char c, size_t n_words)
 {
 	char	*last_c;
 	size_t	dimension;
@@ -80,7 +80,7 @@ static void	str_split(char **arr, char *str, char c, size_t n_words)
 				if (!cpy_word(arr, dimension, last_c + 1, (str - last_c) - 1))
 				{
 					free_all(arr, dimension);
-					return ;
+					return (0);
 				}
 				dimension++;
 			}
@@ -89,6 +89,7 @@ static void	str_split(char **arr, char *str, char c, size_t n_words)
 		str++;
 	}
 	arr[dimension] = 0;
+	return (1);
 }
 
 /*
@@ -108,6 +109,7 @@ char	**ft_split(char const *str, char c)
 	{
 		return (0);
 	}
-	str_split(arr, (char *)str, c, n_words);
-	return (arr);
+	if (str_split(arr, (char *)str, c, n_words))
+		return (arr);
+	return (0);
 }
